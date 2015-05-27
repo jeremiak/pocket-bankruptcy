@@ -75,6 +75,6 @@ app.get('/bankrupt', function (req, res) {
 var server = app.listen(3000, function () {
   var name = require('./package.json')['name'];
   var host = server.address().address;
-  var port = server.address().port;
+  var port = process.env.PORT || 3000;
   console.log('%s listening at http://%s:%s', name, host, port);
 });
