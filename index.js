@@ -14,7 +14,7 @@ app.use(express.static('public'));
 app.use(cookieParser());
 app.set('view engine', 'jade');
 
-app.get('/app.js', browserify('./app.js')); 
+app.get('/bundle.js', browserify('./bundle.js')); 
 
 app.get('/', function (req, res) {
   var token = req.cookies['pocket-access-token'];
