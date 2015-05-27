@@ -21,7 +21,7 @@ function updateUi(finished, err) {
   
   if (finished) {
     headline.textContent = 'Mazel tov, you have 0 unread items!';
-    button.textContent = '&#x1f4a9;';
+    button.innerHtml = '&#x1f4a9;';
     button.style.setProperty('cursor', 'not-allowed');
   }
   else if (err) {
