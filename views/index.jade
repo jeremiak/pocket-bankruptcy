@@ -1,0 +1,15 @@
+extends ./layout.jade
+
+block navbar
+  ul(class='nav navbar-nav navbar-right')
+    li
+      a(href='/logout') Logout
+
+block content
+  div(id='welcome')
+    h1 You currently have #{count} unread and unarchived items in Pocket.
+    button(type='button', class='btn btn-danger btn-lg', id='declare') Declare Pocket Bankruptcy
+    p Just a quick note, there isn't really an easy way to undo this.
+
+block javascript
+  script(src='/app.js')

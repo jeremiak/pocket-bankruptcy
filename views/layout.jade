@@ -1,0 +1,21 @@
+html
+  head
+    title= 'Declare Pocket Bankruptcy'
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/style.css')
+  body
+    nav(class='navbar navbar-default navbar-fixed-top')
+      div(class='container')
+        a(class='navbar-brand', href='#') Brand  
+        block navbar
+    div(class='container')
+      block content
+    footer
+      div(class='container')
+        p thrown together by 
+          a(href='https://twitter.com/jeremiak') @jeremiak
+          
+        p and has no relationship with 
+          a(href='https://getpocket.com') Pocket
+    block javascript
