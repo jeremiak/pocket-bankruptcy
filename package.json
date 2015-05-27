@@ -1,14 +1,18 @@
 {
   "name": "pocket-bankruptcy",
   "version": "1.0.0",
-  "description": "",
+  "description": "For when Pocket becomes a vacuous, black hole of thousands of old, unread articles",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "jeremiak",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jeremiak/pocket-bankruptcy.git"
+  },
   "license": "ISC",
   "dependencies": {
     "browserify-middleware": "^5.0.2",
